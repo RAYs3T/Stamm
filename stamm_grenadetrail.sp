@@ -29,7 +29,6 @@
 
 #undef REQUIRE_PLUGIN
 #include <stamm>
-#include <updater>
 
 
 // Colors for the diffent grenades
@@ -57,20 +56,8 @@ public Plugin:myinfo =
 };
 
 
-
-// Auto updater
 public STAMM_OnFeatureLoaded(const String:basename[])
 {
-	decl String:urlString[256];
-
-
-	Format(urlString, sizeof(urlString), "http://popoklopsi.de/stamm/updater/update.php?plugin=%s", basename);
-
-	if (LibraryExists("updater") && STAMM_AutoUpdate())
-	{
-		Updater_AddPlugin(urlString);
-		Updater_ForceUpdate();
-	}
 }
 
 

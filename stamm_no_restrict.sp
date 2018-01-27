@@ -30,8 +30,6 @@
 #include <stamm>
 #include <restrict>
 #include <cstrike_weapons>
-#include <updater>
-
 #pragma semicolon 1
 
 
@@ -48,23 +46,6 @@ public Plugin:myinfo =
 	description = "VIP's can use restricted weapons",
 	url = "https://forums.alliedmods.net/showthread.php?t=142073"
 };
-
-
-
-
-// Auto Updater
-public STAMM_OnFeatureLoaded(const String:basename[])
-{
-	decl String:urlString[256];
-
-	Format(urlString, sizeof(urlString), "http://popoklopsi.de/stamm/updater/update.php?plugin=%s", basename);
-
-	if (LibraryExists("updater") && STAMM_AutoUpdate())
-	{
-		Updater_AddPlugin(urlString);
-		Updater_ForceUpdate();
-	}
-}
 
 
 

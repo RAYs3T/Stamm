@@ -73,7 +73,6 @@ nativelib_Start()
 	CreateNative("STAMM_GetBlockOfName", nativelib_GetBlockOfName);
 	CreateNative("STAMM_GetType", nativelib_GetStammType);
 	CreateNative("STAMM_GetGame", nativelib_GetStammGame);
-	CreateNative("STAMM_AutoUpdate", nativelib_AutoUpdate);
 	CreateNative("STAMM_GetLevelCount", nativelib_GetStammLevelCount);
 	CreateNative("STAMM_AddClientPoints", nativelib_AddClientStammPoints);
 	CreateNative("STAMM_DelClientPoints", nativelib_DelClientStammPoints);
@@ -864,17 +863,6 @@ public nativelib_GetStammGame(Handle:plugin, numParams)
 {
 	return _:g_iGameID;
 }
-
-
-
-
-// Returns if the player want autoupdates
-public nativelib_AutoUpdate(Handle:plugin, numParams)
-{
-	return GetConVarBool(configlib_WantUpdate);
-}
-
-
 
 
 
