@@ -47,7 +47,7 @@ public Plugin:myinfo =
 {
 	name = "Stamm Feature Higher Firing Rate",
 	author = "Popoklopsi",
-	version = "1.1.1",
+	version = "${-version-}", // Version is replaced by GitLab runner due the build phase
 	description = "Give VIP's higher firing Rate",
 	url = "https://forums.alliedmods.net/showthread.php?t=142073"
 };

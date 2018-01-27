@@ -71,8 +71,8 @@
 public Plugin:myinfo =
 {
 	name = "Stamm",
-	author = "Popoklopsi",
-	version = g_sPluginVersionUpdate,
+	author = "Popoklopsi, RAYs3T",
+	version = "${-version-}", // Version is replaced by GitLab runner due the build phase
 	description = "A powerful VIP Addon with a lot of features",
 	url = "https://forums.alliedmods.net/showthread.php?t=142073"
 };
