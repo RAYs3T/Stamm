@@ -230,7 +230,7 @@ stock WeaponID:GetWeaponID(const String:weapon[])
 {
 	decl info[WeaponInfo];
 	if(GetWeaponInfo(weapon, info))
-		return info[InfoID]
+		return info[InfoID];
 	
 	return WEAPON_NONE;
 }

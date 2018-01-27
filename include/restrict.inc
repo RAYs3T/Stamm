@@ -30,7 +30,7 @@ enum CanBuyResult
  * 
  * Return Plugin_Continue to ignore Plugin_Changed if result was changed Plugin_Handled and higher to block.
  */
-forward Action:Restrict_OnCanBuyWeapon(client, team, WeaponID:id, &CanBuyResult:result);
+forward Action:Restrict_OnCanBuyWeapon(client, team, id, &CanBuyResult:result);
 
 /**
  * Called when CanPickupWeapon is fired 
@@ -42,7 +42,7 @@ forward Action:Restrict_OnCanBuyWeapon(client, team, WeaponID:id, &CanBuyResult:
  * 
  * Return Plugin_Continue to ignore Plugin_Changed if result was changed Plugin_Handled and higher to block.
  */
-forward Action:Restrict_OnCanPickupWeapon(client, team, WeaponID:id, &bool:result);
+forward Action:Restrict_OnCanPickupWeapon(client, team, id, &bool:result);
 
 /**
  * Called when PlayRestrictSound is fired
@@ -53,7 +53,7 @@ forward Action:Restrict_OnCanPickupWeapon(client, team, WeaponID:id, &bool:resul
  * 
  * Return Plugin_Continue to ignore Plugin_Changed if sound (make sure the sound is already cached and in downloads table) was changed Plugin_Handled and higher to block.
  */
-forward Action:Restrict_OnPlayRestrictSound(client, WeaponID:id, String:sound[256]);
+forward Action:Restrict_OnPlayRestrictSound(client, id, String:sound[256]);
 
 /**
  * Called when warmup round has started.

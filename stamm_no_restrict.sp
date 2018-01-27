@@ -152,7 +152,7 @@ public STAMM_OnClientRequestFeatureInfo(client, block, &Handle:array)
 
 
 // Player want to buy somehing
-public Action:Restrict_OnCanBuyWeapon(client, team, WeaponID:id, &CanBuyResult:result)
+public Action:Restrict_OnCanBuyWeapon(client, team, id, &CanBuyResult:result)
 {
 	if (STAMM_IsClientValid(client))
 	{
@@ -176,7 +176,7 @@ public Action:Restrict_OnCanBuyWeapon(client, team, WeaponID:id, &CanBuyResult:r
 
 
 // Player picked up a item
-public Action:Restrict_OnCanPickupWeapon(client, team, WeaponID:id, &bool:result)
+public Action:Restrict_OnCanPickupWeapon(client, team, id, &bool:result)
 {
 	if (STAMM_IsClientValid(client))
 	{
