@@ -1,0 +1,8 @@
+image: rays3t/sourcemod-plugins-builder-ci
+build:
+    stage: build
+    script: spcomp
+    artifacts:
+        name: "${CI_PROJECT_NAME}_${CI_COMMIT_REF_NAME}"
+        paths:
+        - compiled/*
