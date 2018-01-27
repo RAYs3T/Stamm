@@ -59,7 +59,6 @@ new Handle:configlib_VipList;
 new Handle:configlib_Info;
 new Handle:configlib_Change;
 new Handle:configlib_VipRank;
-new Handle:configlib_WantUpdate;
 new Handle:configlib_StripTag;
 new Handle:configlib_UseMenu;
 new Handle:configlib_ShowTextOnPoints;
@@ -108,7 +107,6 @@ configlib_CreateConfig()
 	configlib_Change = AutoExecConfig_CreateConVar("stamm_change_cmd", "sm_schange", "Command to put ones features on/off");
 	configlib_HudText = AutoExecConfig_CreateConVar("stamm_hudtext", "1", "(Only TF2) 1 = Show points always on HUD, 0 = Off");
 	configlib_VipRank = AutoExecConfig_CreateConVar("stamm_viprank", "sm_srank", "Command for VIP Rank");
-	configlib_WantUpdate = AutoExecConfig_CreateConVar("stamm_autoupdate", "1", "1 = Auto Update Stamm and it's features (Needs the Auto Updater), 0 = Off");
 	configlib_StripTag = AutoExecConfig_CreateConVar("stamm_striptag", "0", "1 = Use levelname in chat instead of term \"VIP\", 0 = Use term \"VIP\"");
 	configlib_UseMenu = AutoExecConfig_CreateConVar("stamm_usemenu", "0", "1 = Player sees a menu when typing stamm command, 0 = Just a chat message");
 	configlib_ShowTextOnPoints = AutoExecConfig_CreateConVar("stamm_text_on_points", "1", "1 = Players see a notify when they get points through kill/round/time, 0 = Disable");

@@ -30,8 +30,6 @@
 #include <stamm>
 #include <restrict>
 #include <cstrike_weapons>
-#include <updater>
-
 #pragma semicolon 1
 
 
@@ -48,23 +46,6 @@ public Plugin:myinfo =
 	description = "VIP's can use restricted weapons",
 	url = "https://forums.alliedmods.net/showthread.php?t=142073"
 };
-
-
-
-
-// Auto Updater
-public STAMM_OnFeatureLoaded(const String:basename[])
-{
-	decl String:urlString[256];
-
-	Format(urlString, sizeof(urlString), "http://popoklopsi.de/stamm/updater/update.php?plugin=%s", basename);
-
-	if (LibraryExists("updater") && STAMM_AutoUpdate())
-	{
-		Updater_AddPlugin(urlString);
-		Updater_ForceUpdate();
-	}
-}
 
 
 
@@ -171,7 +152,7 @@ public STAMM_OnClientRequestFeatureInfo(client, block, &Handle:array)
 
 
 // Player want to buy somehing
-public Action:Restrict_OnCanBuyWeapon(client, team, WeaponID:id, &CanBuyResult:result)
+public Action:Restrict_OnCanBuyWeapon(client, team, id, &CanBuyResult:result)
 {
 	if (STAMM_IsClientValid(client))
 	{
@@ -195,7 +176,7 @@ public Action:Restrict_OnCanBuyWeapon(client, team, WeaponID:id, &CanBuyResult:r
 
 
 // Player picked up a item
-public Action:Restrict_OnCanPickupWeapon(client, team, WeaponID:id, &bool:result)
+public Action:Restrict_OnCanPickupWeapon(client, team, id, &bool:result)
 {
 	if (STAMM_IsClientValid(client))
 	{

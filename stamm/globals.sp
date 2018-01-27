@@ -34,9 +34,6 @@
 
 
 
-// Updater
-#define UPDATE_URL "http://popoklopsi.de/stamm/updater/update.php?plugin=stamm"
-
 
 
 // This we need to save all information about a feature

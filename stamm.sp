@@ -54,10 +54,6 @@
 #include "stamm/featurelib.sp"
 #include "stamm/otherlib.sp"
 
-// Maybe include the updater if exists
-#undef REQUIRE_PLUGIN
-#include <updater>
-
 
 
 
@@ -290,15 +286,6 @@ public OnConfigsExecuted()
 {
 	// Load the Configs
 	configlib_LoadConfig();
-
-
-	// Add Auto Updater if exit and want
-	if (LibraryExists("updater") && GetConVarBool(configlib_WantUpdate))
-	{
-		Updater_AddPlugin(UPDATE_URL);
-		Updater_ForceUpdate();
-	}
-
 
 
 	// No mapchange? Real load

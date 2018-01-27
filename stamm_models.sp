@@ -30,7 +30,6 @@
 
 #undef REQUIRE_PLUGIN
 #include <stamm>
-#include <updater>
 
 
 #pragma semicolon 1
@@ -96,21 +95,7 @@ public OnAllPluginsLoaded()
 // Feature loaded, parse models
 public STAMM_OnFeatureLoaded(const String:basename[])
 {
-	decl String:urlString[256];
-
 	new Handle:model_settings;
-
-
-	// Auto updater
-	if (LibraryExists("updater") && STAMM_AutoUpdate())
-	{
-		Format(urlString, sizeof(urlString), "http://popoklopsi.de/stamm/updater/update.php?plugin=%s", basename);
-
-		Updater_AddPlugin(urlString);
-		Updater_ForceUpdate();
-	}
-
-
 
 	// Load Models configs
 	if (!FileExists("cfg/stamm/features/ModelSettings.txt"))
