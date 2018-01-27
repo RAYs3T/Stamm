@@ -82,7 +82,7 @@ panellib_Start()
 	Format(infoString, sizeof(infoString), "Version:    %s", g_sPluginVersionUpdate);
 	DrawPanelText(panellib_credits, infoString);
 
-	DrawPanelText(panellib_credits, "Stamm Page: https://forums.alliedmods.net/showthread.php?t=142073");
+	DrawPanelText(panellib_credits, "Stamm Page: https://gitlab.com/PushTheLimits/Sourcemod/Stamm/wikis");
 	DrawPanelText(panellib_credits, "-------------------------------------------");
 	
 	Format(infoString, sizeof(infoString), "%T", "Back", LANG_SERVER);

@@ -40,7 +40,7 @@ public Plugin:myinfo =
 	author = "Popoklopsi",
 	version = "${-version-}", // Version is replaced by GitLab runner due the build phase
 	description = "VIP's can defuse the bomb instantly",
-	url = "https://forums.alliedmods.net/showthread.php?t=142073"
+	url = "https://gitlab.com/PushTheLimits/Sourcemod/Stamm/wikis"
 };
 
 

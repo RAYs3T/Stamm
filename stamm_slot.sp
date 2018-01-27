@@ -56,7 +56,7 @@ public Plugin:myinfo =
 	author = "Popoklopsi",
 	version = "${-version-}", // Version is replaced by GitLab runner due the build phase
 	description = "Give VIP's a VIP Slot",
-	url = "https://forums.alliedmods.net/showthread.php?t=142073"
+	url = "https://gitlab.com/PushTheLimits/Sourcemod/Stamm/wikis"
 };
 
 
