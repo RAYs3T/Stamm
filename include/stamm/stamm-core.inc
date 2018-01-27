@@ -91,15 +91,6 @@ native StammGame:STAMM_GetGame();
 
 
 /**
- * Returns whether the server admin want auto updates for Stamm.
- * You can use this to know whether to auto update your feature.
- *
- * @return              True if he want, false otherwise.
- */
-native bool:STAMM_AutoUpdate();
-
-
-/**
  * Returns true when Stamm is fully loaded.
  * Use this if you are unsure whether you can use stamm stuff.
  *
@@ -260,7 +251,6 @@ public SharedPlugin:__pl_stamm =
 		MarkNativeAsOptional("STAMM_LoadFeature");
 		MarkNativeAsOptional("STAMM_UnloadFeature");
 		MarkNativeAsOptional("STAMM_WriteToLog");
-		MarkNativeAsOptional("STAMM_AutoUpdate");
 		MarkNativeAsOptional("STAMM_GetTag");
 	}
 #endif
