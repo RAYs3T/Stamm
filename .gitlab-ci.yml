@@ -7,9 +7,15 @@ build:
     - mkdir -p package/cstrike/addons/sourcemod/translations
     - mkdir -p package/cstrike/addons/sourcemod/plugins
     - mkdir -p package/cstrike/cfg
+    - mkdir -p package/cstrike/materials
+    - mkdir -p package/cstrike/models
+    - mkdir -p package/cstrike/sound
     - cp -r compiled/* package/cstrike/addons/sourcemod/plugins
     - cp -r cfg/* package/cstrike/cfg
     - cp -r translations/* package/cstrike/addons/sourcemod/translations
+    - cp -r materials/* package/cstrike/materials
+    - cp -r models/* package/cstrike/models
+    - cp -r sound/* package/cstrike/sound
     
     artifacts:
         name: "${CI_PROJECT_NAME}_${CI_COMMIT_REF_NAME}"
