@@ -46,7 +46,7 @@ public Plugin:myinfo =
 {
 	name = "Stamm Feature LongJump",
 	author = "Popoklopsi",
-	version = "1.1.1",
+	version = "${-version-}", // Version is replaced by GitLab runner due the build phase
 	description = "VIP's have Long Jump",
 	url = "https://forums.alliedmods.net/showthread.php?t=142073"
 };

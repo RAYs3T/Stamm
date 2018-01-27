@@ -47,7 +47,7 @@ public Plugin:myinfo =
 {
 	name = "Stamm Feature VIP Tag",
 	author = "Popoklopsi",
-	version = "1.4.2",
+	version = "${-version-}", // Version is replaced by GitLab runner due the build phase
 	description = "Give VIP's a VIP Tag",
 	url = "https://forums.alliedmods.net/showthread.php?t=142073"
 };

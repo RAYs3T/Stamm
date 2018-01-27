@@ -69,7 +69,7 @@ public Plugin:myinfo =
 {
 	name = "Stamm Feature Vip Models",
 	author = "Popoklopsi",
-	version = "1.3.2",
+	version = "${-version-}", // Version is replaced by GitLab runner due the build phase
 	description = "Give VIP's VIP Models",
 	url = "https://forums.alliedmods.net/showthread.php?t=142073"
 };

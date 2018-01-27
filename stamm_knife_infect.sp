@@ -50,7 +50,7 @@ public Plugin:myinfo =
 {
 	name = "Stamm Feature KnifeInfect",
 	author = "Popoklopsi",
-	version = "1.3.1",
+	version = "${-version-}", // Version is replaced by GitLab runner due the build phase
 	description = "VIP's can infect players with knife",
 	url = "https://forums.alliedmods.net/showthread.php?t=142073"
 };

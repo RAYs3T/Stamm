@@ -1,6 +1,9 @@
 image: rays3t/sourcemod-plugins-builder-ci
 build:
     stage: build
+    variables:
+        AUTO_VERSION_REPLACE: '1'
+
     script: 
     - spcomp
     - mkdir -p package/cstrike/addons/sourcemod/scripting/include

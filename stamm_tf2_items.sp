@@ -45,7 +45,7 @@ public Plugin:myinfo =
 {
 	name = "Stamm Feature TF2 Items",
 	author = "Popoklopsi",
-	version = "1.0.1",
+	version = "${-version-}", // Version is replaced by GitLab runner due the build phase
 	description = "Give VIP's Attributes on Items",
 	url = "https://forums.alliedmods.net/showthread.php?t=142073"
 };

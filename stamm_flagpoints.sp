@@ -43,7 +43,7 @@ public Plugin:myinfo =
 {
 	name = "Stamm Feature FlagPoints",
 	author = "Popoklopsi",
-	version = "1.1.1",
+	version = "${-version-}", // Version is replaced by GitLab runner due the build phase
 	description = "Give only points to players with a specific flag",
 	url = "https://forums.alliedmods.net/showthread.php?t=142073"
 };

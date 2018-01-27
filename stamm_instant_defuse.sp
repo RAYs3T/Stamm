@@ -38,7 +38,7 @@ public Plugin:myinfo =
 {
 	name = "Stamm Feature Instant Defuse",
 	author = "Popoklopsi",
-	version = "1.3.1",
+	version = "${-version-}", // Version is replaced by GitLab runner due the build phase
 	description = "VIP's can defuse the bomb instantly",
 	url = "https://forums.alliedmods.net/showthread.php?t=142073"
 };

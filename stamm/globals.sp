@@ -101,6 +101,7 @@ new StammGames:g_iGameID;
 
 // String globals
 new String:g_sAdminMenu[32];
+// TODO Remove this version indicators ...
 new String:g_sPluginVersion[16] = "2.28";
 new String:g_sPluginVersionUpdate[16] = "2.2.8";
 new String:g_sTableName[64];

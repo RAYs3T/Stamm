@@ -36,7 +36,7 @@ public Plugin:myinfo =
 {
 	name = "Stamm Feature EasyBhop",
 	author = "Bara",
-	version = "1.1.2",
+	version = "${-version-}", // Version is replaced by GitLab runner due the build phase
 	description = "Give VIP's eady bunnyhop",
 	url = "www.bara.in"
 };

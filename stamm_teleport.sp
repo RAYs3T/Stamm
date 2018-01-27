@@ -52,7 +52,7 @@ public Plugin:myinfo =
 {
 	name = "Stamm Feature Teleport",
 	author = "Popoklopsi",
-	version = "1.2.1",
+	version = "${-version-}", // Version is replaced by GitLab runner due the build phase
 	description = "VIP's can create Teleport Points",
 	url = "https://forums.alliedmods.net/showthread.php?t=142073"
 };

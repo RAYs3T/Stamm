@@ -49,7 +49,7 @@ public Plugin:myinfo =
 {
 	name = "Stamm Feature Chat Colors",
 	author = "Popoklopsi",
-	version = "1.0.1",
+	version = "${-version-}", // Version is replaced by GitLab runner due the build phase
 	description = "Give VIP's a own chat color and chat tag",
 	url = "https://forums.alliedmods.net/showthread.php?t=142073"
 };
