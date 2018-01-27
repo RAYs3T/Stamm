@@ -38,7 +38,7 @@
 public Plugin:myinfo =
 {
 	name = "Stamm Feature Admin Flags",
-	author = "Popoklopsi",
+	author = "Popoklopsi, RAYs3T",
 	version = "${-version-}", // Version is replaced by GitLab runner due the build phase
 	description = "Give VIP's Admin Flags",
 	url = "https://forums.alliedmods.net/showthread.php?t=142073"
@@ -114,9 +114,6 @@ public STAMM_OnClientReady(client)
 			// Set flags
 			if (bytes)
 			{
-				// We have to reset admin flags before and change flags on rebuild
-				DumpAdminCache(AdminCache_Admins, true);
-
 				SetUserFlagBits(client, bytes | GetUserFlagBits(client));
 			}
 		}
