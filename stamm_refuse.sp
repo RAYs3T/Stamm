@@ -29,7 +29,7 @@ public Plugin:myinfo =
 {
 	name = "Stamm Feature Refuse",
 	author = "Bara",
-	version = "1.0.0",
+	version = "${-version-}", // Version is replaced by GitLab runner due the build phase
 	description = "On every level terrorists are be able to refuse one more game",
 	url = "www.bara.in"
 };

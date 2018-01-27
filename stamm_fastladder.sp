@@ -38,7 +38,7 @@ public Plugin:myinfo =
 	name = "Stamm Feature FastLadder",
 	author = "Bara",
 	description = "Prohibit non VIP's the fast go up on ladders",
-	version = "1.1.2",
+	version = "${-version-}", // Version is replaced by GitLab runner due the build phase
 	url = "www.bara.in"
 };
 

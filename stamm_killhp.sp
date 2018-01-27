@@ -44,7 +44,7 @@ public Plugin:myinfo =
 {
 	name = "Stamm Feature KillHP",
 	author = "Popoklopsi",
-	version = "1.3.1",
+	version = "${-version-}", // Version is replaced by GitLab runner due the build phase
 	description = "Give VIP's HP every kill",
 	url = "https://forums.alliedmods.net/showthread.php?t=142073"
 };

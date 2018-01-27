@@ -45,7 +45,7 @@ public Plugin:myinfo =
 {
 	name = "Stamm Feature RegenerateHP",
 	author = "Popoklopsi",
-	version = "1.3.2",
+	version = "${-version-}", // Version is replaced by GitLab runner due the build phase
 	description = "Regenerate HP of VIP's",
 	url = "https://forums.alliedmods.net/showthread.php?t=142073"
 };

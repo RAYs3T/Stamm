@@ -39,7 +39,7 @@ public Plugin:myinfo =
 {
 	name = "Stamm Feature Admin Flags",
 	author = "Popoklopsi",
-	version = "1.4.2",
+	version = "${-version-}", // Version is replaced by GitLab runner due the build phase
 	description = "Give VIP's Admin Flags",
 	url = "https://forums.alliedmods.net/showthread.php?t=142073"
 };
